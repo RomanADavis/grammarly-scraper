@@ -20,7 +20,7 @@
       window.onload = function(){
         focus();
         populate();
-        setTimeout(() => hover(), 5000);
+        setTimeout(() => gHover(), 5000);
       }
 
       var populate = function(){
@@ -37,13 +37,15 @@ Where the fear has gone there will be nothing. Only I will remain.`
         document.getElementById("text").focus()
       };
 
-      var hover = function() {
-        const extension = document.getElementsByTagName('grammarly-extension')[0]
-        const button = extension.childNodes[1];
-        const g = button.childNodes[0].childNodes[0];
-        return g.hover();
-        console.log("hovered?");
+      var gHover = function() {
+        hover(1040, 395);
       };
+
+      var hover = function(screenX, screenY){
+        var evt = document.createEvent("MouseEvents");
+        evt.initMouseEvent("hover", true, true, window, 0, 0, 0, screenX, screenY, false, false, false, false, 0, null);
+        document.body.dispatchEvent(evt);
+      }
     </script>
     <form>
       <div class="form-container mt-5">
