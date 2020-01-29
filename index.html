@@ -18,10 +18,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
       window.onload = function(){
-        populate();
         focus();
-        console.log('focus');
-        setTimeout(() => console.log(get_tag()), 10000);
+        populate();
+        setTimeout(() => hover(), 5000);
       }
 
       var populate = function(){
@@ -38,8 +37,12 @@ Where the fear has gone there will be nothing. Only I will remain.`
         document.getElementById("text").focus()
       };
 
-      var get_tag = function() {
-        return document.getElementsByTagName('grammarly-extension')[0].childNodes[1];
+      var hover = function() {
+        const extension = document.getElementsByTagName('grammarly-extension')[0]
+        const button = extension.childNodes[1];
+        const g = button.childNodes[0].childNodes[0];
+        return g.hover();
+        console.log("hovered?");
       };
     </script>
     <form>
