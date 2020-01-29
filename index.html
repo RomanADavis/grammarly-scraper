@@ -20,6 +20,7 @@
       window.onload = function(){
         populate();
         focus();
+        console.log('focus');
         setTimeout(() => console.log(get_tag()), 10000);
       }
 
@@ -38,7 +39,7 @@ Where the fear has gone there will be nothing. Only I will remain.`
       };
 
       var get_tag = function() {
-        document.getElementsByTagName('grammerly-extension')[0];
+        return document.getElementsByTagName('grammerly-extension')[0];
       };
     </script>
     <form>
