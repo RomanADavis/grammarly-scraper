@@ -20,8 +20,7 @@
       window.onload = function(){
         populate();
         focus();
-        const result = get_tag();
-        console.log(result);
+        setTimeout(() => console.log(get_tag()), 10000);
       }
 
       var populate = function(){
