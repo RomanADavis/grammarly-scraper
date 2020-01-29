@@ -1,0 +1,22 @@
+{
+  "name": "grammarlyscraper",
+  "version": "1.0.0",
+  "description": "Scrapes grammarly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomanADavis/grammarly-scraper.git"
+  },
+  "author": "Roman Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomanADavis/grammarly-scraper/issues"
+  },
+  "homepage": "https://github.com/RomanADavis/grammarly-scraper#readme",
+  "dependencies": {
+    "@stewartmcgown/grammarly-api": "^1.1.2"
+  }
+}

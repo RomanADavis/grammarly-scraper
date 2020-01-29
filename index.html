@@ -18,8 +18,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
       window.onload = function(){
-        populate()
-        focus()
+        populate();
+        focus();
+        const result = get_tag();
+        console.log(result);
       }
 
       var populate = function(){
@@ -30,11 +32,15 @@ I will face my fear.
 I will permit it to pass over me and through me.
 And when it has gone past I will turn the inner eye to see its path.
 Where the fear has gone there will be nothing. Only I will remain.`
-      }
+      };
 
       var focus = function() {
         document.getElementById("text").focus()
-      }
+      };
+
+      var get_tag = function() {
+        document.getElementsByTagName('grammerly-extension')[0];
+      };
     </script>
     <form>
       <div class="form-container mt-5">
