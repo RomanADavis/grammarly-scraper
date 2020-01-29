@@ -44,7 +44,7 @@ Where the fear has gone there will be nothing. Only I will remain.`
 
       var hover = function(screenX, screenY){
         var evt = document.createEvent("MouseEvents");
-        evt.initMouseEvent("hover", true, true, window, 0, 0, 0, screenX, screenY, false, false, false, false, 0, null);
+        evt.initMouseEvent("mouseover", true, true, window, 0, 0, 0, screenX, screenY, false, false, false, false, 0, null);
         document.body.dispatchEvent(evt);
       }
     </script>
