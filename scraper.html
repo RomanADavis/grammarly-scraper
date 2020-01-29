@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      window.onload = function(){
+        populate()
+      }
+
+      var populate = function(){
+        document.getElementById("text").value = `I must not fear.
+Fear is the mind-killer.
+Fear is the little-death that brings total obliteration.
+I will face my fear.
+I will permit it to pass over me and through me.
+And when it has gone past I will turn the inner eye to see its path.
+Where the fear has gone there will be nothing. Only I will remain.`
+      }
+    </script>
+    <form>
+      <div class="form-container mt-5">
+        <div class="form-row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <textarea rows="15" cols="100" spellcheck="false" id="text">
+            </textarea>
+          </div>
+        </div>
+        <div class="form-row text-center">
+          <div class="col-12">
+            <input type="submit" value="sUbMiT tHiNe AnSwEr!" class="btn btn-primary">
+          </div>
+        </div>
+        <br>
+      </div>
+    </form>
+  </body>
+  </html>
